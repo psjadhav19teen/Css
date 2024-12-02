@@ -1,0 +1,10 @@
+CSS selectors
+
+1) ID
+2) Class
+---------------------
+1) Combination selectors
+2) Pseudo Class selectors
+3) Pseudo elements selectors
+4) Attribute selectors
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selectors</title>
+    <style>
+    a[href^='https']{
+        color: darkorange; /* starts with */
+    }
+    a[href$='pdf']{
+        color: gray; /* ends with */
+    }
+    a[href*='download']{
+        color: rgb(38, 15, 209); /*contains any where */
+    }
+
+    input[type='text']{
+        background-color: yellow;
+        color: blue;
+    }
+    input[type='password']{
+        background-color: cyan;
+        color: red;
+    }
+    input::placeholder{
+        color: chartreuse;   /* element selector */
+    }
+    input:focus{
+        background-color: darkmagenta; /*class selectors*/
+    }
+    input[type='submit']:active{
+        color: orchid;
+    }
+    </style>
+</head>
+<body>
+    <p>This first para</p>
+    <p>This is second para</p>
+    <ul>
+        <li>Item-1</li>
+        <li>Item-2</li>
+        <li>Item-3</li>
+        <li>Item-4</li>
+    </ul>
+    <a href="https://example.com">Visit Example site(https)</a><br>
+    <a href="download.pdf">Download PDF</a><br>
+    <a href="file.pdf">Download File</a><br>
+    <a href="https://example.com">Visited Link</a><br>
+    <a href="https://google.com">Visited Link</a><br>
+    <input type="text" placeholder="ENter username">
+    <input type="password" placeholder="ENter password">
+    <input type="submit" value="Submit">
+</body>
+</html>

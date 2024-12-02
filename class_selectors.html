@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Selectors</title>
+    <style>
+        p:first-child{
+            font-weight: bold;
+        }
+        li:nth-child(even){
+            background-color: rgb(135, 137, 134);
+        }
+        a:hover{
+            color: coral;
+        }
+        a.special:visited{
+            color: deeppink;
+        }
+    </style>
+</head>
+<body>
+    <p>This first para</p>
+    <p>This is second para</p>
+    <ul>
+        <li>Item-1</li>
+        <li>Item-2</li>
+        <li>Item-3</li>
+        <li>Item-4</li>
+    </ul>
+    <a href="https://example.com">Visit Example site(https)</a><br>
+    <a href="download.pdf">Download PDF</a><br>
+    <a href="file-download.pdf">Download File</a><br>
+    <a class="special" href="https://example.com">Visited Link</a><br>
+    <a class="special" href="https://google.com">Visited Link</a>
+</body>
+</html>
